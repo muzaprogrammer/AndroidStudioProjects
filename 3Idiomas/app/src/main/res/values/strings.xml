@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">3Idiomas</string>
+    <string name="titulo">Titles</string>
+    <string name="saludo">Hello</string>
+</resources>

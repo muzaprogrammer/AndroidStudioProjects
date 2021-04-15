@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:id="@+id/edtNumero"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:hint="Digita un número" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnValidar"
+        android:layout_below="@+id/edtNumero"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Validar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/tvResultado"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btnValidar"
+        android:layout_marginTop="40dp" />
+
+</RelativeLayout>

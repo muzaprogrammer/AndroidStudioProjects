@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">3Idiomas</string>
+    <string name="titulo">Titulo en espa@ol</string>
+    <string name="saludo">Hola</string>
+</resources>

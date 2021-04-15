@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="banderas">
+        <item>@drawable/elsalvador</item>
+        <item>@drawable/guatemala</item>
+        <item>@drawable/honduras</item>
+        <item>@drawable/nicaragua</item>
+        <item>@drawable/costarica</item>
+        <item>@drawable/panama</item>
+        <item>@drawable/colombia</item>
+        <item>@drawable/peru</item>
+        <item>@drawable/brazil</item>
+        <item>@drawable/chile</item>
+        <item>@drawable/argentina</item>
+        <item>@drawable/bolivia</item>
+        <item>@drawable/uruguay</item>
+    </array>
+    
+    <string-array name="paises">
+        <item>El Salvador</item>
+        <item>Guatemala</item>
+        <item>Honduras</item>
+        <item>Nicaragua</item>
+        <item>Costa Rica</item>
+        <item>Panama</item>
+        <item>Colombia</item>
+        <item>Peru</item>
+        <item>Brazil</item>
+        <item>Chile</item>
+        <item>Argentina</item>
+        <item>Bolivia</item>
+        <item>Uruguay</item>
+    </string-array>
+    
+    <string-array name="capitales_paises">
+        <item>San Salvador</item>
+        <item>Guatemala</item>
+        <item>Tegucigalpa</item>
+        <item>Managua</item>
+        <item>San José</item>
+        <item>Panamá</item>
+        <item>Bogotá</item>
+        <item>Lima</item>
+        <item>Brasil</item>
+        <item>Santiago de Chile</item>
+        <item>Buenos Aires</item>
+        <item>Sucre</item>
+        <item>Montevideo</item>
+    </string-array>
+</resources>

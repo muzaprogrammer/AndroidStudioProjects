@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/media_route_menu_item"
+        android:title="Cast"
+        app:actionProviderClass="androidx.mediarouter.app.MediaRouteActionProvider"
+        tools:icon="@drawable/mr_button_light" />
+    <item
+        android:id="@+id/mnu_opc1"
+        android:title="Opcion 1"
+        android:icon="@android:drawable/edit_text"
+        app:showAsAction = "ifRoom"
+        />
+
+    <item
+        android:id="@+id/mnu_opc2"
+        android:title="Opcion 2"
+        android:icon="@android:drawable/ic_delete"
+        app:showAsAction = "ifRoom"
+        />
+
+    <item
+        android:id="@+id/mnu_opc3"
+        android:title="Opcion 3"
+        android:icon="@android:drawable/btn_radio"
+        app:showAsAction = "ifRoom"
+        />
+
+    <item
+        android:id="@+id/mnu_opc4"
+        android:title="Opcion 4"
+        android:icon="@android:drawable/btn_star"
+        app:showAsAction = "ifRoom"
+        />
+</menu>
