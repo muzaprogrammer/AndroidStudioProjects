@@ -1,5 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
 
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.a8navigationcomponet.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_primerFragment"
+            app:destination="@id/primerFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_segundoFragment"
+            app:destination="@id/segundoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/primerFragment"
+        android:name="com.example.a8navigationcomponet.PrimerFragment"
+        android:label="fragment_primer"
+        tools:layout="@layout/fragment_primer" >
+        <action
+            android:id="@+id/action_primerFragment_to_homeFragment2"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/segundoFragment"
+        android:name="com.example.a8navigationcomponet.SegundoFragment"
+        android:label="fragment_segundo"
+        tools:layout="@layout/fragment_segundo" >
+        <action
+            android:id="@+id/action_segundoFragment_to_tercerFragment"
+            app:destination="@id/tercerFragment" />
+        <action
+            android:id="@+id/action_segundoFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tercerFragment"
+        android:name="com.example.a8navigationcomponet.TercerFragment"
+        android:label="fragment_tercer"
+        tools:layout="@layout/fragment_tercer" >
+        <action
+            android:id="@+id/action_tercerFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_tercerFragment_to_segundoFragment"
+            app:destination="@id/segundoFragment" />
+    </fragment>
 </navigation>
