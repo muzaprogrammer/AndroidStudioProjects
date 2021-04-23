@@ -1,4 +1,4 @@
-package com.edu.sv.guia10;
+package com.edu.sv.Parcial3;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SearchView;
@@ -8,10 +8,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
-import com.edu.sv.guia10.databinding.ActivityMainBinding;
-import com.edu.sv.guia10.interfaces.Servicio;
-import com.edu.sv.guia10.models.Producto;
-import com.edu.sv.guia10.models.RespProducto;
+import com.edu.sv.Parcial3.databinding.ActivityMainBinding;
+import com.edu.sv.Parcial3.interfaces.Servicio;
+import com.edu.sv.Parcial3.models.Producto;
+import com.edu.sv.Parcial3.models.RespProducto;
 import java.util.ArrayList;
 import java.util.List;
 import retrofit2.Call;
@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         inicilizarInterface();
-        binding.searchProduct.setOnQueryTextListener(this);
+
         mostrar_todos_los_productos();
     }
 
@@ -37,18 +37,8 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
         productAdapter = new ProductAdapter(this,productos);
         binding.rcvProductos.setLayoutManager(new LinearLayoutManager(this));
         binding.rcvProductos.setAdapter(productAdapter);
-        binding.floatingActionButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,AgregarActivity.class);
-                intent.putExtra("codigo","");
-                intent.putExtra("descripcion","");
-                intent.putExtra("precio","");
-                intent.putExtra("accion","a");
-                startActivity(intent);
-            }
-        });
     }
+
 
     private void mostrar_todos_los_productos(){
         Call<List<Producto>> call = Servicio.service.getProducts();

@@ -1,4 +1,4 @@
-package com.edu.sv.guia10;
+package com.edu.sv.Parcial3;
 
 import android.app.Activity;
 import android.content.DialogInterface;
@@ -12,10 +12,10 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.edu.sv.guia10.databinding.ItemProductoBinding;
-import com.edu.sv.guia10.interfaces.Servicio;
-import com.edu.sv.guia10.models.Producto;
-import com.edu.sv.guia10.models.Respuesta;
+import com.edu.sv.Parcial3.databinding.ItemProductoBinding;
+import com.edu.sv.Parcial3.interfaces.Servicio;
+import com.edu.sv.Parcial3.models.Producto;
+import com.edu.sv.Parcial3.models.Respuesta;
 
 import java.util.List;
 
@@ -63,12 +63,14 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
             itemProductoBinding.cardProducto.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
+                    /*
                     Intent intent = new Intent(context,AgregarActivity.class);
                     intent.putExtra("codigo",producto.getCodigo());
                     intent.putExtra("descripcion",producto.getDescripcion());
                     intent.putExtra("precio",producto.getPrecio());
                     intent.putExtra("accion","e");
                     context.startActivity(intent);
+                    */
                 }
             });
 

@@ -1,9 +1,9 @@
-package com.edu.sv.guia10.interfaces;
+package com.edu.sv.Parcial3.interfaces;
 
 
-import com.edu.sv.guia10.models.Producto;
-import com.edu.sv.guia10.models.RespProducto;
-import com.edu.sv.guia10.models.Respuesta;
+import com.edu.sv.Parcial3.models.Producto;
+import com.edu.sv.Parcial3.models.RespProducto;
+import com.edu.sv.Parcial3.models.Respuesta;
 
 import java.util.List;
 import retrofit2.Call;

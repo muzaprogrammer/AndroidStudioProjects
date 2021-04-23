@@ -1,4 +1,4 @@
-package com.edu.sv.guia10.interfaces;
+package com.edu.sv.Parcial3.interfaces;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;

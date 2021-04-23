@@ -1,4 +1,4 @@
-package com.edu.sv.guia10.models;
+package com.edu.sv.Parcial3.models;
 
 public class Respuesta {
     private boolean ok;
