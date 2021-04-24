@@ -2,8 +2,6 @@ package com.edu.sv.Parcial3.interfaces;
 
 
 import com.edu.sv.Parcial3.models.Producto;
-import com.edu.sv.Parcial3.models.RespProducto;
-import com.edu.sv.Parcial3.models.Respuesta;
 
 import java.util.List;
 import retrofit2.Call;
@@ -18,17 +16,5 @@ public interface APIService {
 
     @GET(".")
     Call<List<Producto>> getProducts();
-
-    @GET()
-    Call<RespProducto> getProductById(@Url String url);
-
-    @POST("agrega")
-    Call<Respuesta> insertProduct(@Body Producto producto);
-
-    @DELETE()
-    Call<Respuesta> deleteProduct(@Url String url);
-
-    @PUT()
-    Call<Respuesta> updateProduct(@Url String url, @Body Producto producto);
 
 }

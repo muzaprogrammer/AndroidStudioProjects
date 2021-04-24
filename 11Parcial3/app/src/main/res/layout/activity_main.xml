@@ -6,17 +6,31 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btnConsultar"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/consultar" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rcvProductos"
-        android:layout_marginTop="50dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btnConsultar"
+            android:onClick="mostrar_todos_los_productos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/consultar" />
+
+        <Button
+            android:id="@+id/btnReset"
+            android:onClick="reset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resetear" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvProductos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp" />
+    </LinearLayout>
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
