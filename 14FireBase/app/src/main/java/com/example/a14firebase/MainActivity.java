@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -27,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void getToken(View view) {
-
+/*
         FirebaseInstallations.getInstance().getToken(false).addOnSuccessListener(new OnSuccessListener<InstallationTokenResult>() {
             @Override
             public void onSuccess(InstallationTokenResult installationTokenResult) {
@@ -36,7 +37,10 @@ public class MainActivity extends AppCompatActivity {
                 edtToken.setText(token);
             }
         });
-
+*/
+        String t = FirebaseMessaging.getInstance().getToken().getResult();
+        edtToken.setText(t);
+        Log.i("TOKEN",t);
     }
 
     public void subscribirse(View view) {
